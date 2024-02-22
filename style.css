@@ -104,9 +104,10 @@ a:hover > span{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin: 10px 0;
 }
 .logo {
-  height: 70px;
+  height: 40px;
 }
 
 .logo:hover {
@@ -443,6 +444,7 @@ section {
   justify-content: center;
   flex-direction: column;
   width: 70%;
+  flex: 1;
 }
 
 .article-container {
