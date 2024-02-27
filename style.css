@@ -444,11 +444,11 @@ section {
   justify-content: center;
   flex-direction: column;
   width: 70%;
-  flex: 1;
 }
 
 .article-container {
   display: flex;
+  justify-content: center;
   text-align: initial;
   flex-wrap: wrap;
   flex-direction: row;
@@ -624,7 +624,7 @@ h3{
   height: 2.5rem;
 }
 .submit{
-  width: 100%;
+  width: 200px;
   padding: 1rem;
   background: #333;
   border: none;
