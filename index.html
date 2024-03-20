@@ -1,627 +1,624 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link
-         rel="stylesheet"
-         href="https://cdn.jsdelivr.net/npm/sheryjs/dist/Shery.css"
-         />
-      <link rel="stylesheet" href="style.css" />
-      <link
-         rel="stylesheet"
-         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-         crossorigin="anonymous"
-         referrerpolicy="no-referrer"
-         />
-      <link rel="shortcut icon" href="./Assets/logo.png" type="image/x-icon" />
-      <title>Priya Portfolio</title>
-   </head>
-   <body id="main">
-      <nav id="desktop-nav">
-         <div class="logo-container">
-            <img src="./Assets/logo.png" alt="" class="logo" />
-         </div>
-         <div>
-            <ul class="nav-links">
-               <li>
-                  <a class="navLink first" href="#about"
-                     >About <span class="overlay one"></span
-                     ></a>
-               </li>
-               <li>
-                  <a class="navLink second" href="#experience"
-                     >Skills<span class="overlay two"></span
-                     ></a>
-               </li>
-               <li>
-                  <a class="navLink third" href="#projects"
-                     >Projects <span class="overlay three"></span
-                     ></a>
-               </li>
-               <li>
-                  <a class="navLink last" href="#contact"
-                     >Contact <span class="overlay four"></span
-                     ></a>
-               </li>
-            </ul>
-         </div>
-      </nav>
-      <nav id="hamburger-nav">
-         <div class="logo">
-            <img src="./Assets/logo.png" alt="" class="logo" />
-         </div>
-         <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-               <span></span>
-               <span></span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sheryjs/dist/Shery.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" href="./Assets/logo.png" type="image/x-icon" />
+    <title>Priya Portfolio</title>
+  </head>
+  <body id="main">
+    <nav id="desktop-nav">
+      <div class="logo-container">
+        <img src="./Assets/logo.png" alt="" class="logo" />
+      </div>
+      <div>
+        <ul class="nav-links">
+          <li>
+            <a class="navLink first" href="#about"
+              >About <span class="overlay one"></span
+            ></a>
+          </li>
+          <li>
+            <a class="navLink second" href="#experience"
+              >Skills<span class="overlay two"></span
+            ></a>
+          </li>
+          <li>
+            <a class="navLink third" href="#projects"
+              >Projects <span class="overlay three"></span
+            ></a>
+          </li>
+          <li>
+            <a class="navLink last" href="#contact"
+              >Contact <span class="overlay four"></span
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">
+        <img src="./Assets/logo.png" alt="" class="logo" />
+      </div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container profile-pic-container">
+        <img
+          src="./Assets/hero-pic.jpg"
+          alt="Priya's profile picture"
+          class="hero_pic"
+        />
+      </div>
+      <div class="section__text section-text-container">
+        <div class="section-text-container">
+          <p class="section__text__p1">Hello, I'm</p>
+          <h1 class="title">Priya Pradhan</h1>
+          <p class="section__text__p2">Frontend Developer</p>
+          <div class="btn-container-one">
+            <a
+              class="btn btn-color-2"
+              href="https://wa.me/7077817064?text=Hey"
+              target="_blank"
+            >
+              Chat with me
+            </a>
+            <button
+              class="btn btn-color-1"
+              onclick="location.href='./#contact'"
+            >
+              Hire me
+            </button>
+          </div>
+          <div id="socials-container">
+            <a
+              href="https://www.linkedin.com/in/priyapradhan437/"
+              class="socials"
+              >linkedIn</a
+            >
+            <a href="https://github.com/priy437pradhan" class="socials"
+              >Github</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="about__pic-container">
+          <img
+            src="./Assets/about-pic.jpeg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <i class="fa-solid fa-certificate"></i>
+              <h3>Experience</h3>
+              <p>2+ years <br />Frontend Development</p>
             </div>
-            <div class="menu-links">
-               <li><a href="#about" onclick="toggleMenu()">About</a></li>
-               <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
-               <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-               <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            <div class="details-container">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <h3>Education</h3>
+              <p>High School (10+2) <br />BTech - Bachelors of Technology</p>
             </div>
-         </div>
-      </nav>
-      <section id="profile">
-         <div class="section__pic-container profile-pic-container">
-            <img
-               src="./Assets/hero-pic.jpg"
-               alt="Priya's profile picture"
-               class="hero_pic"
-               />
-         </div>
-         <div class="section__text section-text-container">
-            <div class="section-text-container">
-               <p class="section__text__p1">Hello, I'm</p>
-               <h1 class="title">Priya Pradhan</h1>
-               <p class="section__text__p2">Frontend Developer</p>
-               <div class="btn-container-one">
-                  <a
-                     class="btn btn-color-2"
-                     href="https://wa.me/7077817064?text=Hey"
-                     target="_blank"
-                     >
-                  Chat with me
-                  </a>
-                  <button
-                     class="btn btn-color-1"
-                     onclick="location.href='./#contact'"
-                     >
-                  Hire me
-                  </button>
-               </div>
-               <div id="socials-container">
-                  <a
-                     href="https://www.linkedin.com/in/priyapradhan437/"
-                     class="socials"
-                     >linkedIn</a
-                     >
-                  <a href="https://github.com/priy437pradhan" class="socials"
-                     >Github</a
-                     >
-               </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Hi,<span class="Web-D">
+                I'm Priya, an Experienced front-end developer</span
+              >
+              adept at crafting user-friendly websites for impactful digital
+              communication. Proficient in leveraging front-end technologies to
+              enhance user engagement and accessibility. Committed to delivering
+              high-quality, innovative solutions for diverse professional
+              settings. Passionate about creating engaging online experiences.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./Assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="skills-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./Assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p class="skill-lvl">Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./Assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p class="skill-lvl">Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./Assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SASS</h3>
+                  <p class="skill-lvl">Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./Assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p class="skill-lvl">Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./Assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React.js</h3>
+                  <p class="skill-lvl">Intermediate</p>
+                </div>
+              </article>
             </div>
-         </div>
-      </section>
-      <section id="about">
-         <p class="section__text__p1">Get To Know More</p>
-         <h1 class="title">About Me</h1>
-         <div class="section-container">
-            <div class="about__pic-container">
-               <img
-                  src="./Assets/about-pic.jpeg"
-                  alt="Profile picture"
-                  class="about-pic"
-                  />
+          </div>
+        </div>
+      </div>
+      <img
+        src="./Assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="project-details-container">
+        <div class="project-containers">
+          <div class="project-container color-container">
+            <div class="article-container">
+              <img
+                src="./Assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
             </div>
-            <div class="about-details-container">
-               <div class="about-containers">
-                  <div class="details-container">
-                     <i class="fa-solid fa-certificate"></i>
-                     <h3>Experience</h3>
-                     <p>2+ years <br />Frontend Development</p>
-                  </div>
-                  <div class="details-container">
-                     <i class="fa-solid fa-graduation-cap"></i>
-                     <h3>Education</h3>
-                     <p>High School (10+2) <br />BTech - Bachelors of Technology</p>
-                  </div>
-               </div>
-               <div class="text-container">
-                  <p>
-                     Hi,<span class="Web-D">
-                     I'm Priya, an Experienced front-end developer</span
-                        >
-                     adept at crafting user-friendly websites for impactful digital
-                     communication. Proficient in leveraging front-end technologies to
-                     enhance user engagement and accessibility. Committed to delivering
-                     high-quality, innovative solutions for diverse professional
-                     settings. Passionate about creating engaging online experiences.
-                  </p>
-               </div>
+            <div class="project-details">
+              <div class="projectNameAndLinks">
+                <h2 class="experience-sub-title project-title">
+                  Netflix Clone
+                </h2>
+                <p class="project-description">
+                  Check out my Netflix landing page project! Built with HTML and
+                  CSS, it offers a sleek design and easy navigation. Explore
+                  curated content seamlessly and experience the essence of a
+                  virtual cinema. Simple, elegant, and user-friendly
+                </p>
+              </div>
+              <div class="btn-container">
+                <a
+                  class="btn btn-color-2 project-btn"
+                  href="https://github.com/priy437pradhan/netflix"
+                  target="_blank"
+                  >Github</a
+                >
+                <a
+                  class="btn btn-color-2 project-btn"
+                  href="https://curious-basbousa-db86f8.netlify.app/"
+                  target="_blank"
+                  >Live Demo</a
+                >
+              </div>
             </div>
-         </div>
-         <img
-            src="./Assets/arrow.png"
-            alt="Arrow icon"
-            class="icon arrow"
-            onclick="location.href='./#experience'"
+          </div>
+          <div class="project-container color-container">
+            <div class="article-container">
+              <img
+                src="./Assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <div class="project-details">
+              <div class="projectNameAndLinks">
+                <h2 class="experience-sub-title project-title">
+                  Spotify Clone
+                </h2>
+                <p class="project-description">
+                  Explore my Spotify Clone project - a musical journey brought
+                  to life with HTML, CSS, and passion for seamless design. Dive
+                  into a user-friendly interface, discover curated playlists,
+                  and enjoy a personalized music experience. It's more than
+                  code; it's a symphony of simplicity and functionality
+                </p>
+              </div>
+              <div class="btn-container">
+                <a
+                  href="https://github.com/priy437pradhan/Spotify"
+                  class="btn btn-color-2 project-btn"
+                  target="_blank"
+                  >Github</a
+                >
+                <a
+                  href="https://spotify-priy437pradhan.vercel.app/"
+                  class="btn btn-color-2 project-btn"
+                  target="_blank"
+                  >Live Demo</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project-container color-container">
+            <div class="article-container">
+              <img
+                src="./Assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <div class="project-details">
+              <div class="projectNameAndLinks">
+                <h2 class="experience-sub-title project-title">Zomato Clone</h2>
+                <p class="project-description">
+                  Discover my Zomato Clone project, a tasty blend of HTML, CSS,
+                  and intuitive design. Navigate through a user-friendly
+                  interface, explore diverse cuisines, and indulge in a
+                  personalized dining experience. Bringing the flavors of Zomato
+                  to life in a simple and appetizing way
+                </p>
+              </div>
+              <div class="btn-container">
+                <a
+                  href="https://github.com/priy437pradhan/zomato"
+                  class="btn btn-color-2 project-btn"
+                  target="_blank"
+                  >Github</a
+                >
+                <a
+                  href="https://zomato-omega-seven.vercel.app/"
+                  class="btn btn-color-2 project-btn"
+                  target="_blank"
+                  >Live Demo</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project-container color-container">
+            <div class="article-container">
+              <img
+                src="./Assets/project-4.png"
+                alt="Project 4"
+                class="project-img"
+              />
+            </div>
+            <div class="project-details">
+              <div class="projectNameAndLinks">
+                <h2 class="experience-sub-title project-title">
+                  Odisha Reporter
+                </h2>
+                <p class="project-description">
+                  Created and made a news website look good and work well on
+                  computers and phones. Used skills in coding languages like
+                  HTML, CSS, JavaScript, and jQuery. Made it easy for people to
+                  use and added cool features for a better experience. Worked
+                  with a team to finish the project on time.
+                </p>
+              </div>
+              <div class="btn-container">
+                <a
+                  href="https://odishareporter.in/"
+                  class="btn btn-color-2 project-btn"
+                  target="_blank"
+                  >Live Link</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project-container color-container">
+            <div class="article-container">
+              <img
+                src="./Assets/project-5.png"
+                alt="Project 5"
+                class="project-img"
+              />
+            </div>
+            <div class="project-details">
+              <div class="projectNameAndLinks">
+                <h2 class="experience-sub-title project-title">OTV Khabar</h2>
+                <p class="project-description">
+                  I made a news website look good and work well on computers and
+                  phones. I used HTML, CSS, JavaScript, and jQuery. People can
+                  easily read the news and click around. I fixed problems and
+                  worked with others to finish everything on time.
+                </p>
+              </div>
+              <div class="btn-container">
+                <a
+                  href="https://otvkhabar.in/"
+                  class="btn btn-color-2 project-btn"
+                  target="_blank"
+                  >Live Link</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project-container color-container">
+            <div class="article-container">
+              <img
+                src="./Assets/project-6.png"
+                alt="Project 6"
+                class="project-img"
+              />
+            </div>
+            <div class="project-details">
+              <div class="projectNameAndLinks">
+                <h2 class="experience-sub-title project-title">
+                  Odisha Television
+                </h2>
+                <p class="project-description">
+                  I made the front part of a news website look good and work
+                  well. I used HTML, CSS, JavaScript, and jQuery. The site works
+                  nicely on different devices, and I added cool features to make
+                  it more interesting. I'm good at solving problems and paying
+                  attention to details. I worked with others to finish the
+                  project on time.
+                </p>
+              </div>
+              <div class="btn-container">
+                <a
+                  href="https://odishatv.in/"
+                  class="btn btn-color-2 project-btn"
+                  target="_blank"
+                  >Live Link</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./Assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <form
+            name="contactForm"
+            id="contactForm"
+            action="sendmail.php"
+            enctype="multipart/form-data"
+            method="POST"
+            class="contact-form"
+          >
+            <label class="email-label"> Your Name (*)</label>
+            <input
+              type="email"
+              id="contactFormName"
+              name="contactFormName"
+              class="email-input"
+              placeholder="your Full Name"
+              required
             />
-      </section>
-      <section id="experience">
-         <p class="section__text__p1">Explore My</p>
-         <h1 class="title">Skills</h1>
-         <div class="experience-details-container">
-            <div class="about-containers">
-               <div class="skills-container">
-                  <h2 class="experience-sub-title">Frontend Development</h2>
-                  <div class="article-container">
-                     <article>
-                        <img
-                           src="./Assets/checkmark.png"
-                           alt="Experience icon"
-                           class="icon"
-                           />
-                        <div>
-                           <h3>HTML</h3>
-                           <p class="skill-lvl">Advanced</p>
-                        </div>
-                     </article>
-                     <article>
-                        <img
-                           src="./Assets/checkmark.png"
-                           alt="Experience icon"
-                           class="icon"
-                           />
-                        <div>
-                           <h3>CSS</h3>
-                           <p class="skill-lvl">Advanced</p>
-                        </div>
-                     </article>
-                     <article>
-                        <img
-                           src="./Assets/checkmark.png"
-                           alt="Experience icon"
-                           class="icon"
-                           />
-                        <div>
-                           <h3>SASS</h3>
-                           <p class="skill-lvl">Intermediate</p>
-                        </div>
-                     </article>
-                     <article>
-                        <img
-                           src="./Assets/checkmark.png"
-                           alt="Experience icon"
-                           class="icon"
-                           />
-                        <div>
-                           <h3>JavaScript</h3>
-                           <p class="skill-lvl">Intermediate</p>
-                        </div>
-                     </article>
-                     <article>
-                        <img
-                           src="./Assets/checkmark.png"
-                           alt="Experience icon"
-                           class="icon"
-                           />
-                        <div>
-                           <h3>React.js</h3>
-                           <p class="skill-lvl">Intermediate</p>
-                        </div>
-                     </article>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <img
-            src="./Assets/arrow.png"
-            alt="Arrow icon"
-            class="icon arrow"
-            onclick="location.href='./#projects'"
+
+            <label class="email-label"> Your email (*)</label>
+            <input
+              type="email"
+              id="contactFormEmail"
+              name="contactFormEmail"
+              class="email-input"
+              placeholder="example@gmail.com"
+              required
             />
-      </section>
-      <section id="projects">
-         <p class="section__text__p1">Browse My Recent</p>
-         <h1 class="title">Projects</h1>
-         <div class="project-details-container">
-            <div class="project-containers">
-               <div class="project-container color-container">
-                  <div class="article-container">
-                     <img
-                        src="./Assets/project-1.png"
-                        alt="Project 1"
-                        class="project-img"
-                        />
-                  </div>
-                  <div class="project-details">
-                     <div class="projectNameAndLinks">
-                        <h2 class="experience-sub-title project-title">
-                           Netflix Clone
-                        </h2>
-                        <p class="project-description">
-                           Check out my Netflix landing page project! Built with HTML and
-                           CSS, it offers a sleek design and easy navigation. Explore
-                           curated content seamlessly and experience the essence of a
-                           virtual cinema. Simple, elegant, and user-friendly
-                        </p>
-                     </div>
-                     <div class="btn-container">
-                        <a
-                           class="btn btn-color-2 project-btn"
-                           href="https://github.com/priy437pradhan/netflix"
-                           target="_blank"
-                           >Github</a
-                           >
-                        <a
-                           class="btn btn-color-2 project-btn"
-                           href="https://curious-basbousa-db86f8.netlify.app/"
-                           target="_blank"
-                           >Live Demo</a
-                           >
-                     </div>
-                  </div>
-               </div>
-               <div class="project-container color-container">
-                  <div class="article-container">
-                     <img
-                        src="./Assets/project-2.png"
-                        alt="Project 2"
-                        class="project-img"
-                        />
-                  </div>
-                  <div class="project-details">
-                     <div class="projectNameAndLinks">
-                        <h2 class="experience-sub-title project-title">
-                           Spotify Clone
-                        </h2>
-                        <p class="project-description">
-                           Explore my Spotify Clone project - a musical journey brought
-                           to life with HTML, CSS, and passion for seamless design. Dive
-                           into a user-friendly interface, discover curated playlists,
-                           and enjoy a personalized music experience. It's more than
-                           code; it's a symphony of simplicity and functionality
-                        </p>
-                     </div>
-                     <div class="btn-container">
-                        <a
-                           href="https://github.com/priy437pradhan/Spotify"
-                           class="btn btn-color-2 project-btn"
-                           target="_blank"
-                           >Github</a
-                           >
-                        <a
-                           href="https://spotify-priy437pradhan.vercel.app/"
-                           class="btn btn-color-2 project-btn"
-                           target="_blank"
-                           >Live Demo</a
-                           >
-                     </div>
-                  </div>
-               </div>
-               <div class="project-container color-container">
-                  <div class="article-container">
-                     <img
-                        src="./Assets/project-3.png"
-                        alt="Project 3"
-                        class="project-img"
-                        />
-                  </div>
-                  <div class="project-details">
-                     <div class="projectNameAndLinks">
-                        <h2 class="experience-sub-title project-title">Zomato Clone</h2>
-                        <p class="project-description">
-                           Discover my Zomato Clone project, a tasty blend of HTML, CSS,
-                           and intuitive design. Navigate through a user-friendly
-                           interface, explore diverse cuisines, and indulge in a
-                           personalized dining experience. Bringing the flavors of Zomato
-                           to life in a simple and appetizing way
-                        </p>
-                     </div>
-                     <div class="btn-container">
-                        <a
-                           href="https://github.com/priy437pradhan/zomato"
-                           class="btn btn-color-2 project-btn"
-                           target="_blank"
-                           >Github</a
-                           >
-                        <a
-                           href="https://zomato-omega-seven.vercel.app/"
-                           class="btn btn-color-2 project-btn"
-                           target="_blank"
-                           >Live Demo</a
-                           >
-                     </div>
-                  </div>
-               </div>
-               <div class="project-container color-container">
-                  <div class="article-container">
-                     <img
-                        src="./Assets/project-4.png"
-                        alt="Project 4"
-                        class="project-img"
-                        />
-                  </div>
-                  <div class="project-details">
-                     <div class="projectNameAndLinks">
-                        <h2 class="experience-sub-title project-title">
-                           Odisha Reporter
-                        </h2>
-                        <p class="project-description">
-                           Created and made a news website look good and work well on
-                           computers and phones. Used skills in coding languages like
-                           HTML, CSS, JavaScript, and jQuery. Made it easy for people to
-                           use and added cool features for a better experience. Worked
-                           with a team to finish the project on time.
-                        </p>
-                     </div>
-                     <div class="btn-container">
-                        <a
-                           href="https://odishareporter.in/"
-                           class="btn btn-color-2 project-btn"
-                           target="_blank"
-                           >Live Link</a
-                           >
-                     </div>
-                  </div>
-               </div>
-               <div class="project-container color-container">
-                  <div class="article-container">
-                     <img
-                        src="./Assets/project-5.png"
-                        alt="Project 5"
-                        class="project-img"
-                        />
-                  </div>
-                  <div class="project-details">
-                     <div class="projectNameAndLinks">
-                        <h2 class="experience-sub-title project-title">OTV Khabar</h2>
-                        <p class="project-description">
-                           I made a news website look good and work well on computers and
-                           phones. I used HTML, CSS, JavaScript, and jQuery. People can
-                           easily read the news and click around. I fixed problems and
-                           worked with others to finish everything on time.
-                        </p>
-                     </div>
-                     <div class="btn-container">
-                        <a
-                           href="https://otvkhabar.in/"
-                           class="btn btn-color-2 project-btn"
-                           target="_blank"
-                           >Live Link</a
-                           >
-                     </div>
-                  </div>
-               </div>
-               <div class="project-container color-container">
-                  <div class="article-container">
-                     <img
-                        src="./Assets/project-6.png"
-                        alt="Project 6"
-                        class="project-img"
-                        />
-                  </div>
-                  <div class="project-details">
-                     <div class="projectNameAndLinks">
-                        <h2 class="experience-sub-title project-title">
-                           Odisha Television
-                        </h2>
-                        <p class="project-description">
-                           I made the front part of a news website look good and work
-                           well. I used HTML, CSS, JavaScript, and jQuery. The site works
-                           nicely on different devices, and I added cool features to make
-                           it more interesting. I'm good at solving problems and paying
-                           attention to details. I worked with others to finish the
-                           project on time.
-                        </p>
-                     </div>
-                     <div class="btn-container">
-                        <a
-                           href="https://odishatv.in/"
-                           class="btn btn-color-2 project-btn"
-                           target="_blank"
-                           >Live Link</a
-                           >
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <img
-            src="./Assets/arrow.png"
-            alt="Arrow icon"
-            class="icon arrow"
-            onclick="location.href='./#contact'"
+
+            <label class="contact-label"> Your Contact Number(*)</label>
+            <input
+              type="tel"
+              id="contactFormNumber"
+              name="contactFormNumber"
+              class="message-input"
             />
-      </section>
-      <section id="contact">
-         <p class="section__text__p1">Get in Touch</p>
-         <h1 class="title">Contact Me</h1>
-         <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-               <form
-                  name="contactForm"
-                  id="contactForm"
-                  action="sendmail.php"
-                  enctype="multipart/form-data"
-                  method="POST"
-                  class="contact-form"
-                  >
-                  <label class="email-label">
-                  Your Name (*)</label>
-                  <input
-                     type="email"
-                     id="contactFormName"
-                     name="contactFormName"
-                     class="email-input"
-                     placeholder="your Full Name"
-                     required
-                     />
-                  
-                  <label class="email-label">
-                  Your email (*)</label>
-                  <input
-                     type="email"
-                     id="contactFormEmail"
-                     name="contactFormEmail"
-                     class="email-input"
-                     placeholder="example@gmail.com"
-                     required
-                     />
-                  
-                  <label class="contact-label">
-                  Your Social or Contact (*)</label>
-                  <input type="tel" id="contactFormNumber" name="contactFormNumber" class="message-input"
-                     />
-                  
-                  <label class="message-label">
-                  Your message (*)</label>
-                  <textarea
-                     required
-                     id="contactFormMessage"
-                     name="contactFormMessage"
-                     class="message-input"
-                     placeholder="I am interested in working with you."
-                     ></textarea>
-                  
-               </form>
-            </div>
-            <button id="submitform" class="submit">Send</button>
-            <div class="contact-social-container">
-               <p>
-                  <a
-                     class="socials contact-socials"
-                     href="https://www.linkedin.com/in/priyapradhan437/  "
-                     target="_blank"
-                     >LinkedIn</a
-                     >
-               </p>
-               <p>
-                  <a
-                     class="socials contact-socials"
-                     href="https://github.com/priy437pradhan"
-                     target="_blank"
-                     >Github</a
-                     >
-               </p>
-               <p>
-                  <a
-                     class="socials contact-socials"
-                     href="https://wa.me/7077817064?text=Hey"
-                     target="_blank"
-                     >WhatsApp</a
-                     >
-               </p>
-            </div>
-         </div>
-      </section>
-      <footer>
-         <div class="logo-container">
-            <img src="/Assets/logo.png" alt="" class="logo" />
-            <h1>Priya Pradhan</h1>
-         </div>
-         <p>Copyright &#437; 2024 priya pradhan. All Rights Reserved.</p>
-      </footer>
-      <script
-         type="text/javascript"
-         src="https://cdn.jsdelivr.net/npm/sheryjs/dist/Shery.js"
-         ></script>
-      <script
-         src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-         ></script>
-      <script src="app.js"></script>
-      <script>
-         $("#submitform").click(function () {
-            var msz = '';
-           var emailpattern = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-         var phonepattern = /^[0-9]{10,14}$/;
-           var contactFormName = $("#contactFormName").val();
-           var contactFormEmail = $("#contactFormEmail").val();
-           var contactFormNumber = $("#contactFormNumber").val();
-           var contactFormMessage = $("#contactFormMessage").val();
-           if(contactFormName ==''){
-            alert("Error! Please enter your Name.");
-            $("contactFormName").focus();
-            return false;
-         }else{
-            var msz = msz + 'Name : '+contactFormName;
-         }
-         if(contactFormEmail ==''){
-            alert("Error! Please enter your Email.");
-            $("#contactFormEmail").focus();
-            return false;
-         }
-     
-         if(!(emailpattern.test(contactFormEmail))){ 
-            alert("Error! Please enter valid Email Address.");
-            $("#contactFormEmail").focus();
-            return false;
-         }
-         else{
-            var msz = msz + 'Email : '+contactFormEmail ;
-         }
-         if(contactFormNumber ==''){
-            alert("Error! Please enter your Number.");
-            $("#contactFormNumber").focus();
-            return false;
-         }
-         
-         if(!(phonepattern.test(contactFormNumber))){
-            alert("Error! Please enter valid Phone Number.");
-            $("#contactFormNumber").focus();
-            return false;
-         }
-         else{
-            var msz = msz + 'number : '+contactFormNumber ;
-         }
-         if(contactFormMessage ==''){
-            alert("Error! Please enter your Message.");
-            $("#contactFormMessage").focus();
-            return false;
-         }
-         
-         else {
-            var msz = msz + 'message : '+contactFormMessage;
-            sendPasswordResetEmail(msz);
 
-            
-            
-         }
-         
-         });
+            <label class="message-label"> Your message (*)</label>
+            <textarea
+              required
+              id="contactFormMessage"
+              name="contactFormMessage"
+              class="message-input"
+              placeholder="message here"
+            ></textarea>
+          
+          </form>
+        </div>
+        <button id="submitform" class="submit">Send</button>
+        <div class="contact-social-container">
+          <p>
+            <a
+              class="socials contact-socials"
+              href="https://www.linkedin.com/in/priyapradhan437/  "
+              target="_blank"
+              >LinkedIn</a
+            >
+          </p>
+          <p>
+            <a
+              class="socials contact-socials"
+              href="https://github.com/priy437pradhan"
+              target="_blank"
+              >Github</a
+            >
+          </p>
+          <p>
+            <a
+              class="socials contact-socials"
+              href="https://wa.me/7077817064?text=Hey"
+              target="_blank"
+              >WhatsApp</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="logo-container">
+        <img src="/Assets/logo.png" alt="" class="logo" />
+        <h1>Priya Pradhan</h1>
+      </div>
+      <p>Copyright &#437; 2024 priya pradhan. All Rights Reserved.</p>
+    </footer>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/sheryjs/dist/Shery.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <script>
+      $("#submitform").click(function () {
+    var msz = "";
+    var emailpattern = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    var phonepattern = /^[0-9]{10,14}$/;
+    var contactFormName = $("#contactFormName");
+    var contactFormEmail = $("#contactFormEmail");
+    var contactFormNumber = $("#contactFormNumber");
+    var contactFormMessage = $("#contactFormMessage");
 
-         function sendPasswordResetEmail(msz) {
+    if (contactFormName.val() == "") {
+        alert("Error! Please enter your Name.");
+        contactFormName.focus();
+        return false;
+    } else {
+        msz += "Name : " + contactFormName.val() + "\n";
+    }
 
-    
+    if (contactFormEmail.val() == "") {
+        alert("Error! Please enter your Email.");
+        contactFormEmail.focus();
+        return false;
+    }
 
-    emailjs.init("CoZlQv3Fq3Z_ue2sm");
+    if (!emailpattern.test(contactFormEmail.val())) {
+        alert("Error! Please enter a valid Email Address.");
+        contactFormEmail.focus();
+        return false;
+    } else {
+        msz += "Email : " + contactFormEmail.val() + "\n";
+    }
+
+    if (contactFormNumber.val() == "") {
+        alert("Error! Please enter your Number.");
+        contactFormNumber.focus();
+        return false;
+    }
+
+    if (!phonepattern.test(contactFormNumber.val())) {
+        alert("Error! Please enter a valid Phone Number.");
+        contactFormNumber.focus();
+        return false;
+    } else {
+        msz += "Number : " + contactFormNumber.val() + "\n";
+    }
+
+    if (contactFormMessage.val() == "") {
+        alert("Error! Please enter your Message.");
+        contactFormMessage.focus();
+        return false;
+    } else {
+        msz += "Message : " + contactFormMessage.val();
+        sendPasswordResetEmail(msz);
+        alert("message sent successfully!");
+
+        contactFormName.val("");
+        contactFormEmail.val("");
+        contactFormNumber.val("");
+        contactFormMessage.val("");
+    }
+});
 
 
-    emailjs.send("service_qifdmnb", "template_4jwsg05", { to_email: 'priyapradhan437@gmail.com' ,
-   
-message: msz
-
-,})
-        .then(function(response) {
-            console.log("Email sent successfully", response);
-            document.getElementById("resetSuccess").style.display = "block";
-            setTimeout(function () {
+      function sendPasswordResetEmail(msz) {
+        emailjs.init("CoZlQv3Fq3Z_ue2sm");
+        emailjs
+          .send("service_qifdmnb", "template_4jwsg05", {
+            to_email: "priyapradhan437@gmail.com",
+            message: msz,
+          })
+          .then(
+            function (response) {
+              console.log("Email sent successfully", response);
+              document.getElementById("resetSuccess").style.display = "block";
+              setTimeout(function () {
                 document.getElementById("resetSuccess").style.display = "none";
-            }, 2000);  
-    
-        }, function(error) {
-            console.error("Email sending failed", error);
-            document.getElementById("resetError").style.display = "block";
-        });
-}
-         
-      </script>
+              }, 2000);
+            },
+            function (error) {
+              console.error("Email sending failed", error);
+              document.getElementById("resetError").style.display = "block";
+            }
+          );
+      }
+    </script>
 
-       <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-   </body>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  </body>
 </html>
