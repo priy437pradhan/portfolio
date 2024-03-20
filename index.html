@@ -537,6 +537,7 @@
       <script src="app.js"></script>
       <script>
          $("#submitform").click(function () {
+            var msz = '';
            var emailpattern = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
          var phonepattern = /^[0-9]{10,14}$/;
            var contactFormName = $("#contactFormName").val();
@@ -547,38 +548,80 @@
             alert("Error! Please enter your Name.");
             $("contactFormName").focus();
             return false;
+         }else{
+            var msz = msz + 'Name : '+contactFormName;
          }
          if(contactFormEmail ==''){
             alert("Error! Please enter your Email.");
             $("#contactFormEmail").focus();
             return false;
          }
+     
          if(!(emailpattern.test(contactFormEmail))){ 
             alert("Error! Please enter valid Email Address.");
             $("#contactFormEmail").focus();
             return false;
+         }
+         else{
+            var msz = msz + 'Email : '+contactFormEmail ;
          }
          if(contactFormNumber ==''){
             alert("Error! Please enter your Number.");
             $("#contactFormNumber").focus();
             return false;
          }
+         
          if(!(phonepattern.test(contactFormNumber))){
             alert("Error! Please enter valid Phone Number.");
             $("#contactFormNumber").focus();
             return false;
+         }
+         else{
+            var msz = msz + 'number : '+contactFormNumber ;
          }
          if(contactFormMessage ==''){
             alert("Error! Please enter your Message.");
             $("#contactFormMessage").focus();
             return false;
          }
+         
          else {
-            $("#contactForm").submit()
+            var msz = msz + 'message : '+contactFormMessage;
+            sendPasswordResetEmail(msz);
+
+            
+            
          }
          
          });
+
+         function sendPasswordResetEmail(msz) {
+
+    
+
+    emailjs.init("CoZlQv3Fq3Z_ue2sm");
+
+
+    emailjs.send("service_qifdmnb", "template_4jwsg05", { to_email: 'priyapradhan437@gmail.com' ,
+   
+message: msz
+
+,})
+        .then(function(response) {
+            console.log("Email sent successfully", response);
+            document.getElementById("resetSuccess").style.display = "block";
+            setTimeout(function () {
+                document.getElementById("resetSuccess").style.display = "none";
+            }, 2000);  
+    
+        }, function(error) {
+            console.error("Email sending failed", error);
+            document.getElementById("resetError").style.display = "block";
+        });
+}
          
       </script>
+
+       <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
    </body>
 </html>
