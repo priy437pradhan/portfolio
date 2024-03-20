@@ -665,6 +665,9 @@ footer p {
 }
 
 @media screen and (max-width: 1200px) {
+  nav{
+    padding: 10px;
+  }
   #desktop-nav {
     display: none;
   }
@@ -713,6 +716,30 @@ footer p {
     width: calc(100% - 25px);
     display: flex;
     justify-content: center;
+  }
+  .contact-info-upper-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    border-radius: 2rem;
+    border: 1px solid darkgray;
+    margin: 2rem auto;
+    padding: 5vw;
+    min-height: 50vh;
+    width: 80vw;
+  }
+  .email-input,.message-input{
+    border: none;
+    margin-bottom: 10vh;
+    border-bottom: 1px solid;
+    padding: 10px;
+    width: 95%;
+    font-size: 16px;
+    resize: none;
+  }
+  footer {
+    margin-top: 2vh;
   }
 }
 
