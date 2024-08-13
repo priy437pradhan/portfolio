@@ -523,7 +523,7 @@ h3{
 }
 .project-img {
   border-radius: 2rem;
-  height: auto;
+  height: 200px;
   width: 350px;
   object-fit: cover;
   
