@@ -1,617 +1,1075 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/sheryjs/dist/Shery.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="shortcut icon" href="./Assets/logo.png" type="image/x-icon" />
-    <title>Priya Portfolio</title>
-  </head>
-  <body id="main">
-    <nav id="desktop-nav">
-      <div class="logo-container">
-        <img src="./Assets/logo.png" alt="" class="logo" />
-      </div>
-      <div>
-        <ul class="nav-links">
-          <li>
-            <a class="navLink first" href="#about"
-              >About <span class="overlay one"></span
-            ></a>
-          </li>
-          <li>
-            <a class="navLink second" href="#experience"
-              >Skills<span class="overlay two"></span
-            ></a>
-          </li>
-          <li>
-            <a class="navLink third" href="#projects"
-              >Projects <span class="overlay three"></span
-            ></a>
-          </li>
-          <li>
-            <a class="navLink last" href="#contact"
-              >Contact <span class="overlay four"></span
-            ></a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">
-        <img src="./Assets/logo.png" alt="" class="logo" />
-      </div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container profile-pic-container">
-        <img
-          src="./Assets/hero-pic.jpg"
-          alt="Priya's profile picture"
-          class="hero_pic"
-        />
-      </div>
-      <div class="section__text section-text-container">
-        <div class="section-text-container">
-          <p class="section__text__p1">Hello, I'm</p>
-          <h1 class="title">Priya Pradhan</h1>
-          <p class="section__text__p2">Frontend Developer</p>
-          <div class="btn-container-one">
-            <a
-              class="btn btn-color-2"
-              href="https://wa.me/7077817064?text=Hey"
-              target="_blank"
-            >
-              Chat with me
-            </a>
-            <button
-              class="btn btn-color-1"
-              onclick="location.href='./#contact'"
-            >
-              Hire me
-            </button>
-          </div>
-          <div id="socials-container">
-            <a
-              href="https://www.linkedin.com/in/priyapradhan437/"
-              class="socials"
-              >linkedIn</a
-            >
-            <a href="https://github.com/priy437pradhan" class="socials"
-              >Github</a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="about__pic-container">
-          <img
-            src="./Assets/about-pic.jpeg"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <i class="fa-solid fa-certificate"></i>
-              <h3>Experience</h3>
-              <p>2+ years <br />Frontend Development</p>
-            </div>
-            <div class="details-container">
-              <i class="fa-solid fa-graduation-cap"></i>
-              <h3>Education</h3>
-              <p>High School (10+2) <br />BTech - Bachelors of Technology</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              Hi,<span class="Web-D">
-                I'm Priya, an Experienced front-end developer</span
-              >
-              adept at crafting user-friendly websites for impactful digital
-              communication. Proficient in leveraging front-end technologies to
-              enhance user engagement and accessibility. Committed to delivering
-              high-quality, innovative solutions for diverse professional
-              settings. Passionate about creating engaging online experiences.
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./Assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Skills</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="skills-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./Assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p class="skill-lvl">Advanced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./Assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p class="skill-lvl">Advanced</p>
-                </div>
-              </article>
-              
-              <article>
-                <img
-                  src="./Assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p class="skill-lvl">Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./Assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>React.js</h3>
-                  <p class="skill-lvl">Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./Assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="project-details-container">
-        <div class="project-containers">
-          <div class="project-container color-container">
-            <div class="article-container">
-              <img
-                src="./Assets/odishaTv-reactjs.png"
-                alt="Project 1"
-                class="project-img"
-               
-              />
-            </div>
-            <div class="project-details">
-              <div class="projectNameAndLinks">
-                <h2 class="experience-sub-title project-title">
-               News Website
-                </h2>
-                <p class="project-description">
-                  I developed a web application using <strong>React, Vite, and Tailwind CSS. </strong> The project is entirely frontend-focused, delivering a fast, responsive, and modern user interface. The tech stack ensures optimized performance and seamless development. The application leverages Vite's build speed and Tailwind's utility-first styling for an efficient workflow
-                </p>
-              </div>
-              <div class="btn-container">
-                <a
-                  class="btn btn-color-2 project-btn"
-                  href="https://github.com/priy437pradhan/OdishaTv"
-                  target="_blank"
-                  >Github</a
-                >
-                <a
-                  class="btn btn-color-2 project-btn"
-                  href="https://odisha-tv.vercel.app/"
-                  target="_blank"
-                  >Live Demo</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="project-container color-container">
-            <div class="article-container">
-              <img
-                src="./Assets/Bharati-project.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <div class="project-details">
-              <div class="projectNameAndLinks">
-                <h2 class="experience-sub-title project-title">
-                  WhatsApp Ordering App
-                </h2>
-                <p class="project-description">
-                 i developed a mobile-only web application for WhatsApp ordering using React, Vite, and Tailwind CSS. The frontend is designed for seamless mobile experience, with a fast and responsive UI. The app leverages Vite's speed and Tailwind's mobile-first styling to ensure optimal performance on smartphones.
-                </p>
-              </div>
-              <div class="btn-container">
-                <a
-                  href="https://github.com/priy437pradhan/bharti-onegram-gold"
-                  class="btn btn-color-2 project-btn"
-                  target="_blank"
-                  >Github</a
-                >
-                <a
-                  href="https://bharti-onegram-gold.vercel.app/"
-                  class="btn btn-color-2 project-btn"
-                  target="_blank"
-                  >Live Demo</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="project-container color-container">
-            <div class="article-container">
-              <img
-                src="./Assets/chatBoat.png"
-                alt="Project 6"
-                class="project-img"
-              />
-            </div>
-            <div class="project-details">
-              <div class="projectNameAndLinks">
-                <h2 class="experience-sub-title project-title">
-                  Chat AI
-                </h2>
-                <p class="project-description">
-                  I developed a chat AI application using React, Vite, and Tailwind CSS, integrated with Google Gemini for instant query resolution. The app focuses on a seamless chat experience, optimized for speed and responsiveness. Tailwind ensures a clean, modern UI, while Vite enhances the build performance for quick, efficient deployment.
-                </p>
-              </div>
-              <div class="btn-container">
-                <a
-                  href="https://github.com/priy437pradhan/MyAIChtatBoat"
-                  class="btn btn-color-2 project-btn"
-                  target="_blank"
-                  >Github</a
-                >
-                <a
-                  href="https://my-ai-chat-boat.vercel.app/"
-                  class="btn btn-color-2 project-btn"
-                  target="_blank"
-                  >Live Link</a
-                >
-              </div>
-            </div>
-          </div>
-          
-          <div class="project-container color-container">
-            <div class="article-container">
-              <img
-                src="./Assets/netflix.png"
-                alt="Project 4"
-                class="project-img"
-              />
-            </div>
-            <div class="project-details">
-              <div class="projectNameAndLinks">
-                <h2 class="experience-sub-title project-title">
-                Landing Page Clone
-                </h2>
-                <p class="project-description">
-                  I created a responsive landing page clone of Netflix's homepage using only HTML and CSS. The design adjusts seamlessly across different screen sizes, ensuring a clean, modern look. By using media queries and flexible layouts, the page delivers an optimal user experience on both desktop and mobile devices. If you encounter an error when going live through the link, simply choose the option to visit the site anyway—there's no risk involved.
-                </p>
-              </div>
-              <div class="btn-container">
-                <a
-                href="https://github.com/priy437pradhan/netflix"
-                class="btn btn-color-2 project-btn"
-                target="_blank"
-                >Github</a
-              >
-                <a
-                  href="https://netflix-vert-six.vercel.app/"
-                  class="btn btn-color-2 project-btn"
-                  target="_blank"
-                  >Live Demo</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="project-container color-container">
-            <div class="article-container">
-              <img
-                src="./Assets/currency-converter.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <div class="project-details">
-              <div class="projectNameAndLinks">
-                <h2 class="experience-sub-title project-title">Currency Converter</h2>
-                <p class="project-description">
-                  Discover my Zomato Clone project, a tasty blend of HTML, CSS,
-                  and intuitive design. Navigate through a user-friendly
-                  interface, explore diverse cuisines, and indulge in a
-                  personalized dining experience. Bringing the flavors of Zomato
-                  to life in a simple and appetizing way
-                </p>
-              </div>
-              <div class="btn-container">
-                <a
-                  href="https://github.com/priy437pradhan/CurrencyExchanged"
-                  class="btn btn-color-2 project-btn"
-                  target="_blank"
-                  >Github</a
-                >
-                <a
-                  href="https://currency-exchanged.vercel.app/"
-                  class="btn btn-color-2 project-btn"
-                  target="_blank"
-                  >Live Demo</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="project-container color-container">
-            <div class="article-container">
-              <img
-                src="./Assets/spotify.png"
-                alt="Project 5"
-                class="project-img"
-              />
-            </div>
-            <div class="project-details">
-              <div class="projectNameAndLinks">
-                <h2 class="experience-sub-title project-title">Spotify</h2>
-                <p class="project-description">
-                  I created a landing page clone of Spotify's homepage using only HTML and CSS. The design replicates Spotify's sleek and modern aesthetic, including responsive layouts and eye-catching elements. The page is structured with semantic HTML and styled with CSS to match Spotify's branding, ensuring a consistent look across different devices and screen sizes.
-                </p>
-              </div>
-              <div class="btn-container">
-                <a
-                href="https://github.com/priy437pradhan/Spotify"
-                class="btn btn-color-2 project-btn"
-                target="_blank"
-                >Github</a
-              >
-                <a
-                  href="https://spotify-one-fawn.vercel.app/"
-                  class="btn btn-color-2 project-btn"
-                  target="_blank"
-                  >Live Link</a
-                >
-              </div>
-            </div>
-          </div>
-          
-         
-        </div>
-      </div>
-      <img
-        src="./Assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <form
-            name="contactForm"
-            id="contactForm"
-            action="sendmail.php"
-            enctype="multipart/form-data"
-            method="POST"
-            class="contact-form"
-          >
-            <label class="email-label"> Your Name (*)</label>
-            <input
-              type="email"
-              id="contactFormName"
-              name="contactFormName"
-              class="email-input"
-              placeholder="your Full Name"
-              required
-            />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priya Pradhan - React Developer</title>
+    <iframe src="chatbot.html" style="position:fixed;bottom:20px;right:20px;width:400px;height:600px;border:none;z-index:9999;"></iframe>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --text-color: #333;
+            --bg-color: #ffffff;
+            --card-bg: #f8f9fa;
+            --border-color: #e0e0e0;
+            --shadow: rgba(0, 0, 0, 0.1);
+        }
 
-            <label class="email-label"> Your email (*)</label>
-            <input
-              type="email"
-              id="contactFormEmail"
-              name="contactFormEmail"
-              class="email-input"
-              placeholder="example@gmail.com"
-              required
-            />
+        [data-theme="dark"] {
+            --primary-color: #64ffda;
+            --secondary-color: #bb86fc;
+            --accent-color: #cf6679;
+            --text-color: #e0e0e0;
+            --bg-color: #121212;
+            --card-bg: #1e1e1e;
+            --border-color: #333;
+            --shadow: rgba(255, 255, 255, 0.1);
+        }
 
-            <label class="contact-label"> Your Contact Number(*)</label>
-            <input
-              type="tel"
-              id="contactFormNumber"
-              name="contactFormNumber"
-              class="message-input"
-            />
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-            <label class="message-label"> Your message (*)</label>
-            <textarea
-              required
-              id="contactFormMessage"
-              name="contactFormMessage"
-              class="message-input"
-              placeholder="message here"
-            ></textarea>
-          
-          </form>
-        </div>
-        <button id="submitform" class="submit">Send</button>
-        <div class="contact-social-container">
-          <p>
-            <a
-              class="socials contact-socials"
-              href="https://www.linkedin.com/in/priyapradhan437/  "
-              target="_blank"
-              >LinkedIn</a
-            >
-          </p>
-          <p>
-            <a
-              class="socials contact-socials"
-              href="https://github.com/priy437pradhan"
-              target="_blank"
-              >Github</a
-            >
-          </p>
-          <p>
-            <a
-              class="socials contact-socials"
-              href="https://wa.me/7077817064?text=Hey"
-              target="_blank"
-              >WhatsApp</a
-            >
-          </p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <div class="logo-container">
-        <img src="/Assets/logo.png" alt="" class="logo" />
-        <h1>Priya Pradhan</h1>
-      </div>
-      <p>Copyright &#437; 2024 priya pradhan. All Rights Reserved.</p>
-    </footer>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/sheryjs/dist/Shery.js"
-    ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="app.js"></script>
-    <script>
-      $("#submitform").click(function () {
-    var msz = "";
-    var emailpattern = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-    var phonepattern = /^[0-9]{10,14}$/;
-    var contactFormName = $("#contactFormName");
-    var contactFormEmail = $("#contactFormEmail");
-    var contactFormNumber = $("#contactFormNumber");
-    var contactFormMessage = $("#contactFormMessage");
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            transition: all 0.3s ease;
+            overflow-x: hidden;
+        }
 
-    if (contactFormName.val() == "") {
-        alert("Error! Please enter your Name.");
-        contactFormName.focus();
-        return false;
-    } else {
-        msz += "Name : " + contactFormName.val() + "\n";
-    }
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: var(--card-bg);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 1rem 0;
+            border-bottom: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+        }
 
-    if (contactFormEmail.val() == "") {
-        alert("Error! Please enter your Email.");
-        contactFormEmail.focus();
-        return false;
-    }
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
 
-    if (!emailpattern.test(contactFormEmail.val())) {
-        alert("Error! Please enter a valid Email Address.");
-        contactFormEmail.focus();
-        return false;
-    } else {
-        msz += "Email : " + contactFormEmail.val() + "\n";
-    }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
 
-    if (contactFormNumber.val() == "") {
-        alert("Error! Please enter your Number.");
-        contactFormNumber.focus();
-        return false;
-    }
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
 
-    if (!phonepattern.test(contactFormNumber.val())) {
-        alert("Error! Please enter a valid Phone Number.");
-        contactFormNumber.focus();
-        return false;
-    } else {
-        msz += "Number : " + contactFormNumber.val() + "\n";
-    }
+        .nav-item a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 500;
+            position: relative;
+            transition: color 0.3s ease;
+        }
 
-    if (contactFormMessage.val() == "") {
-        alert("Error! Please enter your Message.");
-        contactFormMessage.focus();
-        return false;
-    } else {
-        msz += "Message : " + contactFormMessage.val();
-        sendMessageEmail(msz);
-        alert("message sent successfully!");
+        .nav-item a:hover {
+            color: var(--primary-color);
+        }
 
-        contactFormName.val("");
-        contactFormEmail.val("");
-        contactFormNumber.val("");
-        contactFormMessage.val("");
-    }
-});
+        .nav-item a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary-color);
+            transition: width 0.3s ease;
+        }
 
+        .nav-item a:hover::after {
+            width: 100%;
+        }
 
-      function sendMessageEmail(msz) {
-        emailjs.init("CoZlQv3Fq3Z_ue2sm");
-        emailjs
-          .send("service_qifdmnb", "template_4jwsg05", {
-            to_email: "priyapradhan437@gmail.com",
-            message: msz,
-          })
-          .then(
-            function (response) {
-              console.log("Email sent successfully", response);
-              document.getElementById("resetSuccess").style.display = "block";
-              setTimeout(function () {
-                document.getElementById("resetSuccess").style.display = "none";
-              }, 2000);
-            },
-            function (error) {
-              console.error("Email sending failed", error);
-              document.getElementById("resetError").style.display = "block";
+        .theme-toggle {
+            background: none;
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+        }
+
+        .theme-toggle:hover {
+            background: var(--primary-color);
+            color: var(--bg-color);
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background: var(--text-color);
+            margin: 3px 0;
+            transition: 0.3s;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 2rem;
+            background: linear-gradient(135deg, var(--bg-color) 0%, var(--card-bg) 100%);
+        }
+
+        .hero-container {
+            max-width: 1200px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-content .subtitle {
+            font-size: 1.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+
+        .hero-content p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px var(--shadow);
+        }
+
+        .hero-image {
+            text-align: center;
+            position: relative;
+        }
+
+        .hero-image::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            height: 300px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border-radius: 50%;
+            opacity: 0.1;
+            z-index: -1;
+        }
+
+        .profile-pic {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid var(--primary-color);
+        }
+
+        .social-links {
+            margin-top: 2rem;
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        .social-links a {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--card-bg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-color);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: 1px solid var(--border-color);
+        }
+
+        .social-links a:hover {
+            background: var(--primary-color);
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        /* Section Styles */
+        section {
+            padding: 5rem 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.1rem;
+            margin-bottom: 3rem;
+            opacity: 0.8;
+        }
+
+        /* About Section */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .stat-card {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            border: 1px solid var(--border-color);
+            transition: transform 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .stat-card i {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .stat-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Skills Section */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .skill-category {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 15px;
+            border: 1px solid var(--border-color);
+        }
+
+        .skill-category h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary-color);
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .skill-tag {
+            background: var(--primary-color);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            transition: transform 0.3s ease;
+        }
+
+        .skill-tag:hover {
+            transform: scale(1.05);
+        }
+
+        /* Experience Section */
+        .experience-timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .experience-timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--primary-color);
+            transform: translateX(-50%);
+        }
+
+        .experience-item {
+            position: relative;
+            margin-bottom: 3rem;
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 15px;
+            border: 1px solid var(--border-color);
+            width: calc(50% - 2rem);
+        }
+
+        .experience-item:nth-child(odd) {
+            left: 0;
+        }
+
+        .experience-item:nth-child(even) {
+            left: calc(50% + 2rem);
+        }
+
+        .experience-item::before {
+            content: '';
+            position: absolute;
+            top: 2rem;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: var(--primary-color);
+        }
+
+        .experience-item:nth-child(odd)::before {
+            right: -2.5rem;
+        }
+
+        .experience-item:nth-child(even)::before {
+            left: -2.5rem;
+        }
+
+        .experience-item h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .experience-item .company {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .experience-item .duration {
+            color: var(--secondary-color);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Projects Section */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            background: var(--card-bg);
+            border-radius: 15px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px var(--shadow);
+        }
+
+        .project-image {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3rem;
+        }
+
+        .project-content {
+            padding: 2rem;
+        }
+
+        .project-content h3 {
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .project-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin: 1rem 0;
+        }
+
+        .tech-tag {
+            background: var(--border-color);
+            color: var(--text-color);
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+        }
+
+        .project-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .project-links a {
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .project-links .btn-primary {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .project-links .btn-secondary {
+            border: 1px solid var(--primary-color);
+            color: var(--primary-color);
+        }
+
+        /* Contact Section */
+        .contact {
+            background: var(--card-bg);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .contact-item i {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--primary-color);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .contact-form {
+            background: var(--bg-color);
+            padding: 2rem;
+            border-radius: 15px;
+            border: 1px solid var(--border-color);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            background: var(--card-bg);
+            color: var(--text-color);
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
             }
-          );
-      }
-    </script>
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-  </body>
-</html>
+        .animate-on-scroll {
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: var(--card-bg);
+                padding: 1rem;
+                border-top: 1px solid var(--border-color);
+            }
+
+            .nav-menu.active {
+                display: flex;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .hero-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 2rem;
+            }
+
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .experience-timeline::before {
+                left: 20px;
+            }
+
+            .experience-item {
+                width: calc(100% - 3rem);
+                left: 3rem !important;
+            }
+
+            .experience-item::before {
+                left: -2.5rem !important;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 1rem;
+            }
+
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">Priya Pradhan</a>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="#home">Home</a></li>
+                <li class="nav-item"><a href="#about">About</a></li>
+                <li class="nav-item"><a href="#skills">Skills</a></li>
+                <li class="nav-item"><a href="#experience">Experience</a></li>
+                <li class="nav-item"><a href="#projects">Projects</a></li>
+                <li class="nav-item"><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="theme-toggle">
+                <i class="fas fa-moon"></i> Dark
+            </button>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Priya Pradhan</h1>
+                <p class="subtitle">React Developer</p>
+                <p>Innovative React Developer with <strong>3 years</strong> of expertise in building high-performance web applications. Proven track record in optimizing load times and enhancing user engagement through advanced performance techniques.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-envelope"></i> Hire Me
+                    </a>
+                    <a href="https://wa.me/7077817064?text=Hey" class="btn btn-secondary" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Chat with Me
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-pic" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); display: flex; align-items: center; justify-content: center; color: white; font-size: 4rem;">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/priyapradhan437" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/priy437pradhan" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://portfolio-nine-neon-88.vercel.app" target="_blank">
+                        <i class="fas fa-globe"></i>
+                    </a>
+                    <a href="mailto:priyapradhan437@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <p class="section-subtitle">Get to know more about my background and expertise</p>
+            <div class="about-grid">
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <i class="fas fa-certificate"></i>
+                        <h3>Experience</h3>
+                        <p>3+ years<br>Frontend Development</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>Education</h3>
+                        <p>Bachelor of Technology<br>ABIT, Cuttack</p>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <p>Hi, I'm Priya, an experienced React Developer skilled in building scalable, maintainable web applications using modern technologies. I specialize in creating user-friendly interfaces that deliver exceptional digital experiences.</p>
+                    <p>Currently working at Odisha Television Ltd., I've developed large-scale applications including content management systems, news platforms, and internal tools. I'm passionate about performance optimization, clean code architecture, and staying updated with the latest frontend technologies.</p>
+                    <p>My expertise spans across React.js, Next.js, TypeScript, and modern CSS frameworks, with a strong focus on responsive design and user experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <p class="section-subtitle">Technologies and tools I work with</p>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Frontend Development</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Next.js</span>
+                        <span class="skill-tag">React.js</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">JavaScript (ES6+)</span>
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-paint-brush"></i> Styling & Design</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Tailwind CSS</span>
+                        <span class="skill-tag">Responsive Design</span>
+                        <span class="skill-tag">CSS Grid</span>
+                        <span class="skill-tag">Flexbox</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Tools & Others</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Redux</span>
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">Performance Optimization</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <p class="section-subtitle">My professional journey and key achievements</p>
+            <div class="experience-timeline">
+                <div class="experience-item">
+                    <h3>React Developer</h3>
+                    <div class="company">Odisha Television Ltd.</div>
+                    <div class="duration">December 2022 - Present</div>
+                    <ul>
+                        <li>Developed large-scale internal applications using Next.js, TypeScript, and Tailwind CSS</li>
+                        <li>Built reusable, type-safe UI components ensuring maintainability and scalability</li>
+                        <li>Implemented responsive layouts and interactive dashboards</li>
+                        <li>Optimized data flow and API integrations for real-time operations</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">Some of the projects I've worked on</p>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-tv"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>OTV Stringer Input-Output App</h3>
+                        <p>Internal application for streamlining workflows for stringer teams with real-time field reporting capabilities.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Tailwind CSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-newspaper"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>OdishaTelevision Website</h3>
+                        <p>Dynamic news website with nested routing, breaking news updates, and mobile-first responsive design.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">React Router</span>
+                            <span class="tech-tag">Tailwind CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://odishatv.in/" class="btn-primary" target="_blank">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>OTV CMS - Recommendation Model</h3>
+                        <p>Content management system with recommendation engine integration and detailed logging panel for editorial actions.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Redux</span>
+                            <span class="tech-tag">REST APIs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>WhatsApp Ordering App</h3>
+                        <p>Jewellery ordering interface with WhatsApp conversation UI and pre-filled message generation for orders.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Context API</span>
+                            <span class="tech-tag">Tailwind CSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Netflix Clone</h3>
+                        <p>Landing page replica with sleek design and easy navigation, showcasing frontend development skills.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/priy437pradhan/netflix" class="btn-secondary" target="_blank">GitHub</a>
+                            <a href="https://curious-basbousa-db86f8.netlify.app/" class="btn-primary" target="_blank">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </section>
+    // Add this script before the closing </body> tag
+
+<script>
+    // Dark mode toggle functionality
+    const themeToggle = document.getElementById('theme-toggle');
+    const body = document.body;
+    
+    // Check for saved theme preference or default to light mode
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    
+    // Apply saved theme on page load
+    if (savedTheme === 'dark') {
+        body.setAttribute('data-theme', 'dark');
+        updateToggleButton(true);
+    }
+    
+    // Theme toggle event listener
+    themeToggle.addEventListener('click', () => {
+        const isDark = body.getAttribute('data-theme') === 'dark';
+        
+        if (isDark) {
+            // Switch to light mode
+            body.removeAttribute('data-theme');
+            localStorage.setItem('theme', 'light');
+            updateToggleButton(false);
+        } else {
+            // Switch to dark mode
+            body.setAttribute('data-theme', 'dark');
+            localStorage.setItem('theme', 'dark');
+            updateToggleButton(true);
+        }
+    });
+    
+    // Update toggle button text and icon
+    function updateToggleButton(isDark) {
+        const icon = themeToggle.querySelector('i');
+        const text = themeToggle.childNodes[1]; // Text node after the icon
+        
+        if (isDark) {
+            icon.className = 'fas fa-sun';
+            themeToggle.innerHTML = '<i class="fas fa-sun"></i> Light';
+        } else {
+            icon.className = 'fas fa-moon';
+            themeToggle.innerHTML = '<i class="fas fa-moon"></i> Dark';
+        }
+    }
+
+    // Mobile hamburger menu functionality
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+    
+    hamburger.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+        
+        // Animate hamburger
+        hamburger.classList.toggle('active');
+        const spans = hamburger.querySelectorAll('span');
+        if (hamburger.classList.contains('active')) {
+            spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
+            spans[1].style.opacity = '0';
+            spans[2].style.transform = 'rotate(-45deg) translate(7px, -6px)';
+        } else {
+            spans[0].style.transform = 'none';
+            spans[1].style.opacity = '1';
+            spans[2].style.transform = 'none';
+        }
+    });
+    
+    // Close mobile menu when clicking on nav links
+    const navLinks = document.querySelectorAll('.nav-item a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            navMenu.classList.remove('active');
+            hamburger.classList.remove('active');
+            const spans = hamburger.querySelectorAll('span');
+            spans[0].style.transform = 'none';
+            spans[1].style.opacity = '1';
+            spans[2].style.transform = 'none';
+        });
+    });
+    
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+    
+    // Navbar scroll effect
+    let lastScrollY = window.scrollY;
+    const navbar = document.querySelector('.navbar');
+    
+    window.addEventListener('scroll', () => {
+        const currentScrollY = window.scrollY;
+        
+        if (currentScrollY > lastScrollY && currentScrollY > 100) {
+            // Scrolling down
+            navbar.style.transform = 'translateY(-100%)';
+        } else {
+            // Scrolling up
+            navbar.style.transform = 'translateY(0)';
+        }
+        
+        lastScrollY = currentScrollY;
+    });
+    
+    // Add scroll animation for sections
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate-on-scroll');
+            }
+        });
+    }, observerOptions);
+    
+    // Observe all sections
+    document.querySelectorAll('section').forEach(section => {
+        observer.observe(section);
+    });
+</script>
+<script src="chatbot.html"></script>
+</body>
+</html>  
